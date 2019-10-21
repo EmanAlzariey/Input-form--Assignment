@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valid</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="java.js"></script>
+</head>
+<body>
+<form name="contactForm" onsubmit="return validateForm()">
+    <h2>Enter Your Message</h2>
+    <div class="row">
+        <label>Name</label>
+        <input type="text" name="name">
+        <div class="error" id="nameError"></div>
+    </div>
+    <div class="row">
+        <label>Email Address</label>
+        <input type="text" name="email">
+        <div class="error" id="emailError"></div>
+    </div>
+    <div class="row">
+        <label>Mobile Number</label>
+        <input type="text" id="mobile" name="mobile">
+        <div class="error" id="mobileError"></div>
+    </div>
+    <div class="row">
+        <label>Country</label>
+        <select name="country">
+            <option>Select</option>
+            <option>Yemen</option>
+            <option>Yemen</option>
+            <option>Yemen</option>
+            <option>Yemen</option>
+        </select> 
+        <div class="error" id="countryError"></div>
+    </div>
+
+    <div class="row">
+        <label>Message</label>
+        <textarea style="height:300px; width: 300px; border:1px solid lightgrey;" type="text" id="message" name="message"></textarea>
+        <div class="error" id="messageError"></div>
+    </div>
+    
+           
+    <div class="row">
+        <input type="submit" value="Submit">
+    </div>
+</form>
+</body>
+</html>
